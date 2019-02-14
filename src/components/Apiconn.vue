@@ -1,13 +1,8 @@
 <template>
 	<div>
-		<div v-for="currency in info" class="currency" >
-    {{ currency.description }}:
-    <span class="lighten">
-      <span v-html="currency.symbol"></span><pre>{{ currency }}</pre>
-      <span v-html="raw"></span>
-    </span>
+	 <pre>{{ info }}</pre>
   </div>
-	</div>
+
 </template>
 
 <script>
@@ -15,8 +10,7 @@ import axios from 'axios'
 export default{
 	data(){
      return{
-     	info: null,
-     	raw: '<button>ABC</button>'
+     	info: null
      }
 	},
 	mounted(){
