@@ -14,7 +14,7 @@ export default{
      }
 	},
 	mounted(){
-		axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+		axios.get('https://jsonplaceholder.typicode.com/posts')
       .then((response) => (this.info = response.data))
       .catch((err)=>{this.info = err})
 	}
